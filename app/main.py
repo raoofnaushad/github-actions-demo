@@ -13,6 +13,8 @@ def return_backwards_string(random_string):
 
 @app.route('/get-mode')
 def get_mode():
+    ## some change
+    raise Exception("Some exception")
     return os.environ.get("MODE")
 
 
